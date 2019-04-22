@@ -1,0 +1,50 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral() // add repository
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.2'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2' // add plugin
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
+        //Bmob的maven仓库地址--必填
+        maven { url "https://raw.github.com/bmob/bmob-android-sdk/master" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    var = [
+            // 版本号相关
+            versionCode                         : 1,
+            versionName                         : '1.0.0',
+            // 相关依赖库版本
+            supportVersion                      : '28.0.0',
+            easyPMVersion                       : "2.0.0",
+            retrofitVersion                     : '2.5.0',
+            PictureSelectorVersion              : 'v2.2.3',
+            leakcanaryVersion                   : '1.6.2',
+            rxAndroidVersion                    : '2.1.0',
+            rxJavaVersion                       : '2.2.4',
+            systembartintVersion                : '1.0.3',
+            eventBusVersion                     : '3.1.1',
+            BaseRecyclerViewAdapterHelperVersion: '2.9.28',
+            adapter_rxjavaVarsion               : '2.5.0'
+    ]
+}

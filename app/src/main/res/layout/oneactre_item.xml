@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/onecreate_item_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5：你更希望选择兼职的类型？" />
+
+        <RadioGroup
+            android:id="@+id/onecreate_item_rad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/onecreate_item_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text=" 家教" />
+
+            <RadioButton
+                android:id="@+id/onecreate_item_btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="派传单" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/onecreate_item_btn3"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="超市或便利店销售" />
+
+            <RadioButton
+                android:id="@+id/onecreate_item_btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="其他" />
+
+
+        </RadioGroup>
+    </LinearLayout>
+    <View
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>
